@@ -12,19 +12,23 @@ namespace PRC2Toets1
         {
             get; private set;
         }
+
         public List<Song> Songs
         {
             get; private set;
         } 
+
         public Playlist(string name)
         {
             Name = name;
             Songs = new List<Song>();
         }
+
         public void Add(Song song)
         {
             Songs.Add(song);
         }
+
         public void Add(List<Song> songs)
         {
             foreach ( Song s in songs)
@@ -32,11 +36,13 @@ namespace PRC2Toets1
                 Songs.Add(s);
             }
         }
+
         public void Remove(Song song)
         {
             Songs.Remove(song);
             Songs.Sort();
         }
+
         //public List<Song> getSongs()
         //{
         //    return this.Songs;
@@ -45,5 +51,6 @@ namespace PRC2Toets1
         {
             return this.Name;
         }
+
     }
 }
