@@ -42,10 +42,6 @@ namespace PRC2Toets1
                 if (p == playlist)
                 {
                     p.Add(song);
-                    if (Songs.Count > 3)
-                    {
-                        Songs.Sort();
-                    }
                 }
             
             }
